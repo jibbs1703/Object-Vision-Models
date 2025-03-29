@@ -1,5 +1,5 @@
+jupyter==1.1.1
 matplotlib==3.10.0
+opencv-python==4.11.0.86
 pandas==2.2.2
-PIL==11.1.0
-torch==2.5.1+cu124
-torchvision==0.20.1+cu124
+pillow==11.1.0

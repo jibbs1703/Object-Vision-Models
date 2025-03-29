@@ -83,7 +83,9 @@ print(class_report)
 # Visualize Classification Report
 conf_matrix = confusion_matrix(y_val, y_val_pred)
 plt.figure(figsize=(10, 8))
-sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=[str(i) for i in range(10)], yticklabels=[str(i) for i in range(10)])
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues',
+            xticklabels=[str(i) for i in range(10)],
+            yticklabels=[str(i) for i in range(10)])
 plt.xlabel('Predicted')
 plt.ylabel('True')
 plt.title('Confusion Matrix')
