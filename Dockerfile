@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /workspace
 
+RUN apt-get update && apt install -y libgl1-mesa-glx
+
 COPY requirements.txt /workspace/requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
